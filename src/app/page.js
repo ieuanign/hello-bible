@@ -1,10 +1,11 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import Script from "next/script";
+// import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <main>
+      {/* <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.js</code>
@@ -89,7 +90,12 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
+      <Script
+        id="script__ID"
+        src="https://hellobible-back.mypreprod.xyz/widget/bundle.js?uuid=662a11faf4e5e2a94512f6cd"
+        async
+      />
     </main>
   );
 }
